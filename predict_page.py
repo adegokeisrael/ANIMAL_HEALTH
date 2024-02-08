@@ -52,10 +52,10 @@ def show_predict_page():
     )
 
     animal_temperatures = {
-        "Goat": "Normal body temperature of a healthy goat: 101.5°F to 104°F (38.6°C to 40°C)",
-        "Cow": "Normal body temperature of a healthy cow: 100.4°F to 102.5°F (38°C to 39.2°C)",
-        "Sheep": "Normal body temperature of a healthy sheep: 101.5°F to 104°F (38.6°C to 40°C)",
-        "Buffalo": "Normal body temperature of a healthy buffalo: 100.4°F to 103.1°F (38°C to 39.5°C)"
+        "goat": "Normal body temperature of a healthy goat: 101.5°F to 104°F (38.6°C to 40°C)",
+        "cow": "Normal body temperature of a healthy cow: 100.4°F to 102.5°F (38°C to 39.2°C)",
+        "sheep": "Normal body temperature of a healthy sheep: 101.5°F to 104°F (38.6°C to 40°C)",
+        "buffalo": "Normal body temperature of a healthy buffalo: 100.4°F to 103.1°F (38°C to 39.5°C)"
     }
 
     livestock = st.selectbox("Select Livestock", list(animal_temperatures.keys()))
