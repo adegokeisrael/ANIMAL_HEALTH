@@ -74,30 +74,30 @@ def show_predict_page():
     hint_text = animal_temperatures.get(livestock, "Select an animal to see its normal body temperature.")
     st.info(hint_text)
 
-    prescription={"Goat_anthrax":"Isolate and mark the affected goat.Disinfect the area thoroughly and avoid handling the goat or its body.Contact a veterinarian and report the suspected case to local authorities, as anthrax is a zoonotic disease that can affect humans too.",
-"Goat_blackleg":"Isolate the affected goat to prevent further spread. This disease kills within 12- 48 hours of infection Contact your veterinarian immediately.",
-"Goat_pneumonia":"Isolate the affected goat and monitor its breathing. Provide a clean and dry environment with proper ventilation to keep the sheep warm and dry.Feed the goat with balanced diet that provides enough calories to maintain body temperature.",
-"Goat_lumpy virus":"Isolate the infected goat to prevent the spread of the virus. Clean the area around the wound with mild soap and water. Maintain good hygiene and disinfect the environment to reduce the risk of transmission.",
-"Goat_foot and mouth":"Isolate the infected goat to prevent disease spread. Clean the area around the blister with mild soap and water. Check the blister regularly for signs of infection such as redness or discharge.",
+    prescription={"goat_anthrax":"Isolate and mark the affected goat.Disinfect the area thoroughly and avoid handling the goat or its body.Contact a veterinarian and report the suspected case to local authorities, as anthrax is a zoonotic disease that can affect humans too.",
+"goat_blackleg":"Isolate the affected goat to prevent further spread. This disease kills within 12- 48 hours of infection Contact your veterinarian immediately.",
+"goat_pneumonia":"Isolate the affected goat and monitor its breathing. Provide a clean and dry environment with proper ventilation to keep the sheep warm and dry.Feed the goat with balanced diet that provides enough calories to maintain body temperature.",
+"goat_lumpy virus":"Isolate the infected goat to prevent the spread of the virus. Clean the area around the wound with mild soap and water. Maintain good hygiene and disinfect the environment to reduce the risk of transmission.",
+"goat_foot and mouth":"Isolate the infected goat to prevent disease spread. Clean the area around the blister with mild soap and water. Check the blister regularly for signs of infection such as redness or discharge.",
 
 
-"Buffalo_anthrax":"Isolate and mark the affected buffalo. Disinfect the area thoroughly and avoid handling the buffalo or its body. Contact a veterinarian and report the suspected case to local authorities, as anthrax is a zoonotic disease that can affect humans too.",
-"Buffalo_blackleg":"Isolate the affected buffalo to prevent further spread. Contact a veterinarian immediately for support as diseases kill within 48 hours.",
-"Buffalo_pneumonia":"Isolate the affected buffalo and monitor its breathing. Provide a clean and dry environment with proper ventilation to keep the sheep warm and dry. Provide supportive care like fluid therapy and antibiotics.",
-"Buffalo_lumpy virus":"Isolate the buffalo to prevent the spread of the virus. Clean the area around the wound with mild soap and water. Maintain good hygiene and disinfect the environment to reduce the risk of transmission.",
-"Buffalo_foot and mouth":"Isolate the infected buffalo to prevent disease spread. Clean the area around the blister with mild soap and water. Treat the blister by regularly dressing.",
+"buffalo_anthrax":"Isolate and mark the affected buffalo. Disinfect the area thoroughly and avoid handling the buffalo or its body. Contact a veterinarian and report the suspected case to local authorities, as anthrax is a zoonotic disease that can affect humans too.",
+"buffalo_blackleg":"Isolate the affected buffalo to prevent further spread. Contact a veterinarian immediately for support as diseases kill within 48 hours.",
+"buffalo_pneumonia":"Isolate the affected buffalo and monitor its breathing. Provide a clean and dry environment with proper ventilation to keep the sheep warm and dry. Provide supportive care like fluid therapy and antibiotics.",
+"buffalo_lumpy virus":"Isolate the buffalo to prevent the spread of the virus. Clean the area around the wound with mild soap and water. Maintain good hygiene and disinfect the environment to reduce the risk of transmission.",
+"buffalo_foot and mouth":"Isolate the infected buffalo to prevent disease spread. Clean the area around the blister with mild soap and water. Treat the blister by regularly dressing.",
 
-"Cow_anthrax":"Isolate and mark the affected cow. Disinfect the area thoroughly and avoid handling the cow or its body. Contact a veterinarian and report the suspected case to local authorities, as anthrax is zoonotic disease that can affect humans too.",
-"Cow_blackleg":"Isolate the affected cow to prevent spreading the disease. Contact a veterinarian immediately for support as diseases kill within 48 hours.",
-"Cow_pneumonia":"Isolate the affected cow to prevent disease spread to other animals. Provide a well-ventilated, dry, and comfortable environment. Keep the animal warm and ensure access to clean water and food.",
-"Cow_lumpy virus":"Isolate the affected cow to prevent disease spread. Clean the area around the wound with mild soap and water. Practice strict biosecurity measures, including disinfection of equipment and personnel.",
-"Cow_foot and mouth":"Isolate the affected cow to avoid disease spread. Clean the area around the blister with mild soap and water. Check the blister regularly for signs of infection such as redness or discharge. ",
+"cow_anthrax":"Isolate and mark the affected cow. Disinfect the area thoroughly and avoid handling the cow or its body. Contact a veterinarian and report the suspected case to local authorities, as anthrax is zoonotic disease that can affect humans too.",
+"cow_blackleg":"Isolate the affected cow to prevent spreading the disease. Contact a veterinarian immediately for support as diseases kill within 48 hours.",
+"cow_pneumonia":"Isolate the affected cow to prevent disease spread to other animals. Provide a well-ventilated, dry, and comfortable environment. Keep the animal warm and ensure access to clean water and food.",
+"cow_lumpy virus":"Isolate the affected cow to prevent disease spread. Clean the area around the wound with mild soap and water. Practice strict biosecurity measures, including disinfection of equipment and personnel.",
+"cow_foot and mouth":"Isolate the affected cow to avoid disease spread. Clean the area around the blister with mild soap and water. Check the blister regularly for signs of infection such as redness or discharge. ",
 
-"Sheep_anthrax":"Isolate and mark the affected cow. Disinfect the area thoroughly and avoid handling the cow or its body. Contact a veterinarian and report the suspected case to local authorities, as anthrax is zoonotic disease that can affect humans too.",
-"Sheep_blackleg":"Isolate the affected sheep to prevent further spread. This disease kills within 12- 48 hours of infection Contact your veterinarian immediately.",
-"Sheep_pneumonia":"Isolate the affected sheep and monitor its breathing. Provide a clean and dry environment with proper ventilation to keep the sheep warm and dry. Provide supportive care like fluid therapy and antibiotics.",
-"Sheep_lumpy virus":"Isolate the infected sheep to prevent the spread of the virus. Clean the area around the wound with mild soap and water. Maintain good hygiene and disinfect the environment to reduce the risk of transmission.",
-"Sheep_foot and mouth":"Isolate the infected sheep to prevent disease spread. Clean the area around the blister with mild soap and water.  Apply wound healing cream on blister surface. "
+"sheep_anthrax":"Isolate and mark the affected cow. Disinfect the area thoroughly and avoid handling the cow or its body. Contact a veterinarian and report the suspected case to local authorities, as anthrax is zoonotic disease that can affect humans too.",
+"sheep_blackleg":"Isolate the affected sheep to prevent further spread. This disease kills within 12- 48 hours of infection Contact your veterinarian immediately.",
+"sheep_pneumonia":"Isolate the affected sheep and monitor its breathing. Provide a clean and dry environment with proper ventilation to keep the sheep warm and dry. Provide supportive care like fluid therapy and antibiotics.",
+"sheep_lumpy virus":"Isolate the infected sheep to prevent the spread of the virus. Clean the area around the wound with mild soap and water. Maintain good hygiene and disinfect the environment to reduce the risk of transmission.",
+"sheep_foot and mouth":"Isolate the infected sheep to prevent disease spread. Clean the area around the blister with mild soap and water.  Apply wound healing cream on blister surface. "
 
 }
 
