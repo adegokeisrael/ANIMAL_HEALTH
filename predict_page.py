@@ -10,9 +10,9 @@ def load_model(name):
 
 
 def show_predict_page():
-    st.title("LiveStock Disease Prediction")
+    st.title("Livestock Disease Prediction")
 
-    st.write("""### Give some information so we can predict Cattle Disease""")
+    st.write("""### Give some information so we can predict Livestock Disease """)
 
     Symptoms1 = (
         'loss of appetite', 'depression','shortness of breath',
